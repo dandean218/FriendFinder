@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../assets/reset.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../assets/style.css">
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <title>Best Friends Forever!</title>
+</head>
+<body>
+    <div class="container top">
+        <div class="jumbotron">
+            <h1>Best Friends Forever!</h1> 
+            <p>Take this little quiz to find out who you best match up with!</p> 
+        </div>
+            <p align="center">Choose the answer that best represents your feelings, thoughts, and attitudes.</p> 
+    </div>
+
+    
+    <form>
+        <div class="form-group">
+            <input id="name_survey" type="text" class="form-control" placeholder="Name (Required)">
+        </div>
+        <br>
+        <div class="form-group">
+            <input id="photo_survey" type="text" class="form-control" placeholder="Link to Profile Photo (Required)">
+        </div>
+        <br>
+        <br>
+        
+    
+        <div class="form-group">
+                <label for="friendForm">Cinnamon should be elevated to official condiment status beside salt and pepper.</label>
+                <select class="form-control" id="survey_q1">
+                    <option value="1">Strongly Agree</option>
+                    <option value="2">Agree</option>
+                    <option value="3">Neutral</option>
+                    <option value="4">Disagree</option>
+                    <option value="5">Strongly Disagree</option>
+                </select>
+        </div>
+        <br>
+        <div class="form-group">
+            <label for="friendForm">After dinner coffee should ALWAYS be served with cake.</label>
+                <select class="form-control" id="survey_q2">
+                    <option value="1">Strongly Agree</option>
+                    <option value="2">Agree</option>
+                    <option value="3">Neutral</option>
+                    <option value="4">Disagree</option>
+                    <option value="5">Strongly Disagree</option>
+                </select>
+        </div>
+        <br>
+        <div class="form-group">
+            <label for="friendForm">Apple crisp made with raisins is delicious and anyone who says otherwise is foolish.</label>
+                <select class="form-control" id="survey_q3">
+                    <option value="1">Strongly Agree</option>
+                    <option value="2">Agree</option>
+                    <option value="3">Neutral</option>
+                    <option value="4">Disagree</option>
+                    <option value="5">Strongly Disagree</option>
+                </select>
+        </div>
+        <br>
+        <div class="form-group">
+            <label for="friendForm">I eat butter straight up and I'm not ashamed to admit it.</label>
+                <select class="form-control" id="survey_q4">
+                    <option value="1">Strongly Agree</option>
+                    <option value="2">Agree</option>
+                    <option value="3">Neutral</option>
+                    <option value="4">Disagree</option>
+                    <option value="5">Strongly Disagree</option>
+                </select>
+        </div>
+        <br>
+        <div class="form-group">
+            <label for="friendForm">Pineapple on pizza should be a crime, punishable by 5 years in jail.</label>
+                <select class="form-control" id="survey_q5">
+                    <option value="1">Strongly Agree</option>
+                    <option value="2">Agree</option>
+                    <option value="3">Neutral</option>
+                    <option value="4">Disagree</option>
+                    <option value="5">Strongly Disagree</option>
+                </select>
+        </div>
+        <br>
+        <div class="form-group">
+            <label for="friendForm">Lettuce should be thoroughly washed before serving it. Triple rinse.</label>
+                <select class="form-control" id="survey_q6">
+                    <option value="1">Strongly Agree</option>
+                    <option value="2">Agree</option>
+                    <option value="3">Neutral</option>
+                    <option value="4">Disagree</option>
+                    <option value="5">Strongly Disagree</option>
+                </select>
+        </div>
+        <br>
+        <div class="form-group">
+            <label for="friendForm">A Whitman's Sampler is a complete and utter disappointment.</label>
+                <select class="form-control" id="survey_q7">
+                    <option value="1">Strongly Agree</option>
+                    <option value="2">Agree</option>
+                    <option value="3">Neutral</option>
+                    <option value="4">Disagree</option>
+                    <option value="5">Strongly Disagree</option>
+                </select>
+        </div>
+        <br>
+        <div class="form-group">
+            <label for="friendForm">I've said, "What's up, Doc?" at least twice when eating a carrot.</label>
+                <select class="form-control" id="survey_q8">
+                    <option value="1">Strongly Agree</option>
+                    <option value="2">Agree</option>
+                    <option value="3">Neutral</option>
+                    <option value="4">Disagree</option>
+                    <option value="5">Strongly Disagree</option>
+                </select>
+        </div>
+        <br>
+        <div class="form-group">
+            <label for="friendForm">I take my coffee black. Any one who takes sugar or cream is not of this world.</label>
+                <select class="form-control" id="survey_q9">
+                    <option value="1">Strongly Agree</option>
+                    <option value="2">Agree</option>
+                    <option value="3">Neutral</option>
+                    <option value="4">Disagree</option>
+                    <option value="5">Strongly Disagree</option>
+                </select>
+        </div>
+        <br>
+        <div class="form-group">
+            <label for="friendForm">Swedish Fish are my favorite guilty pleasure.</label>
+                <select class="form-control" id="survey_q10">
+                    <option value="1">Strongly Agree</option>
+                    <option value="2">Agree</option>
+                    <option value="3">Neutral</option>
+                    <option value="4">Disagree</option>
+                    <option value="5">Strongly Disagree</option>
+                </select>
+        </div>
+        <br>     
+        <div class="text-center">
+            <button id="submitBtn" type="submit" class="btn btn-success btn-lg">Submit</button>
+        </div>
+
+    </form>
+
+<!-- Modal after survey completion -->
+<div id="bestFriendModal" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h3 class="modal-title">Best Friends Forever!</h1>
+            </div>
+        <div class="modal-body">
+            <h2 id="bestFriend"></h2>
+            <img id="bestFriendPhoto" src="#">
+        </div>
+        <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+        </div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
+
+<script type="text/javascript">
+$("#submitBtn").on("click", function(event) {
+    event.preventDefault();
+    // Form validation
+    var valid = true;
+    if($("#name_survey").val() === "" || $("#photo_survey").val() === "") {
+        valid = false;
+    } else if($("#survey_q1").val() === "empty" || $("#survey_q2").val() === "empty" || $("#survey_q3").val() === "empty" || $("#survey_q4").val() === "empty" || $("#survey_q5").val() === "empty" || $("#survey_q6").val() === "empty" || $("#survey_q7").val() === "empty" || $("#survey_q8").val() === "empty" || $("#survey_q9").val() === "empty" || $("#survey_q10").val() === "empty") {
+        valid = false;
+    }
+    if(valid === true) {
+        var newUser = {
+            name: $("#name_survey").val().trim(),
+            photo: $("#photo_survey").val().trim(),
+            scores: [
+                $("#survey_q1").val(),
+                $("#survey_q2").val(),
+                $("#survey_q3").val(),
+                $("#survey_q4").val(),
+                $("#survey_q5").val(),
+                $("#survey_q6").val(),
+                $("#survey_q7").val(),
+                $("#survey_q8").val(),
+                $("#survey_q9").val(),
+                $("#survey_q10").val()
+            ]
+        };
+    var currentURL = window.location.origin;
+        // Ajax call for receiving response after POST req
+        $.post(currentURL + "/api/friends", newUser, function(data) {
+            $("#bestFriend").text(data.name);
+            $("#bestFriendPhoto").attr("src", data.photo);
+            $("#bestFriendModal").modal("toggle");
+        });
+    } else {
+        // If a required field is missing, show alert
+        alert("Survey is incomplete!");
+    }
+});
+

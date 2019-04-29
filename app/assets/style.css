@@ -1,0 +1,35 @@
+.content{
+    /* margin-top: 40px; */
+    margin:auto;
+    padding-top:40px; 
+}
+
+.homepage{
+    margin:auto;
+    display:block;
+}
+
+.btn-success{
+    display:block;
+    margin:auto;
+}
+
+.form-group{
+    margin:auto;
+    max-width:30%;
+    display:block;
+    font-weight:bold;
+}
+
+.form-control{
+    margin:auto;
+    max-width: 100%;
+}
+
+.top{
+    margin:auto;
+    display:block;
+}
+.jumbotron{
+    text-align:center;
+}
