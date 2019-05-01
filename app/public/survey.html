@@ -173,6 +173,7 @@
 
 <script type="text/javascript">
 $("#submitBtn").on("click", function(event) {
+    
     event.preventDefault();
     // Form validation
     var valid = true;
@@ -198,9 +199,11 @@ $("#submitBtn").on("click", function(event) {
                 $("#survey_q10").val()
             ]
         };
+
+        alert(newUser.name);
     var currentURL = window.location.origin;
         // Ajax call for receiving response after POST req
-        $.post(currentURL + "/api/friends", newUser, function(data) {
+        $.post("api/friends", newUser, function(data) {
             $("#bestFriend").text(data.name);
             $("#bestFriendPhoto").attr("src", data.photo);
             $("#bestFriendModal").modal("toggle");
@@ -210,4 +213,4 @@ $("#submitBtn").on("click", function(event) {
         alert("Survey is incomplete!");
     }
 });
-
+</script>
