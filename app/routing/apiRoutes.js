@@ -1,13 +1,13 @@
 //API call to bring in and handle survey data from friends
-var friendlist = require('../data/friends.js');
 
 module.exports = function(app){
+    var friendList = require('../data/friends')
     //pulls info from API/Friends into a JSON object
     app.get('/api/friends', function(req,res){
         res.json(friendlist)
     });
 
-    app.post('api/friends', function(req, res){
+    app.post('/api/friends', function(req, res){
         //comares data from survey into API/FRIENDS JSON object with new data
         var newFriendScores = req.body.scores;
         var friendScoresArray = [];
@@ -17,7 +17,7 @@ module.exports = function(app){
             //loops through all friends in array
             var diffScores = 0;
             for(let f = 0; f<newFriendScores.length; f++){
-                diffScores += (Math.abs(parseInt(friendList[i].scores[f])-pareseInt(newFriendScores[j])));
+                diffScores += (Math.abs(parseInt(friendList[i].scores[f])-parseInt(newFriendScores[f])));
             }
             friendScoresArray.push(diffScores);
         }

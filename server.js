@@ -2,6 +2,7 @@
 var express = require('express');
 var path = require('path');
 var bodyParser = require('body-parser');
+const friendList = require('./app/data/friends')
 
 //setting up express and port for the app
 var app = express();
