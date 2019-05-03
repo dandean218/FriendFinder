@@ -13,7 +13,7 @@ module.exports = function(app){
         var friendScoresArray = [];
         var bestMatch = 0;
 
-        for(let i = 0; i<friendlist.length; i++){
+        for(let i = 0; i<friendList.length; i++){
             //loops through all friends in array
             var diffScores = 0;
             for(let f = 0; f<newFriendScores.length; f++){

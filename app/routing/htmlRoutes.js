@@ -8,15 +8,15 @@ module.exports = function(app){
         res.sendFile(path.join(__dirname + '/../public/home.html'));
     });
 
-    app.get('/survey.html', function(req, res){
+    app.get('/survey', function(req, res){
         res.sendFile(path.join(__dirname + '/../public/survey.html'));
     });
 
-    app.get('/assets/style.css', function(req, res){
+    app.get('/assets/style', function(req, res){
         res.sendFile(path.join(__dirname + '/../assets/style.css'));
     });
 
-    app.get('/data/friends.js', function(req, res){
+    app.get('/data/friends', function(req, res){
         res.sendFile(path.join(__dirname + '/../data/friends.js'));
     });
 }
