@@ -15,7 +15,10 @@ const PORT = process.env.PORT || 9000;
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(express.static(path.resolve(__dirname, 'app')));
-app.use(cors());
+app.use(cors({
+  origin: 'https://friend-finder001.herokuapp.com/',
+  optionsSuccessStatus: 200,
+}));
 
 // API routing
 app.use('/api', apiRoutes);
