@@ -1,22 +1,20 @@
-//incorporates path library into the app
-var path = require('path');
+// incorporates path library into the app
+const express = require('express');
 
-//setting up HTML routing and makes it available to app
-module.exports = function(app){
+const router = express.Router();
+const path = require('path');
 
-    app.get('/', function(req, res){
-        res.sendFile(path.join(__dirname + '/../public/home.html'));
-    });
+// setting up HTML routing and makes it available to app
+router.get('/', (req, res) => {
+  res.sendFile(path.join(`${__dirname}/../public/home.html`));
+});
 
-    app.get('/survey', function(req, res){
-        res.sendFile(path.join(__dirname + '/../public/survey.html'));
-    });
+router.get('/survey', (req, res) => {
+  res.sendFile(path.join(`${__dirname}/../public/survey.html`));
+});
 
-    app.get('/assets/style', function(req, res){
-        res.sendFile(path.join(__dirname + '/../assets/style.css'));
-    });
+router.get('/data/friends', (req, res) => {
+  res.sendFile(path.join(`${__dirname}/../data/friends.js`));
+});
 
-    app.get('/data/friends', function(req, res){
-        res.sendFile(path.join(__dirname + '/../data/friends.js'));
-    });
-}
+module.exports = router;

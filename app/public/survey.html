@@ -5,9 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="../assets/reset.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
-    <link rel="stylesheet" href="/../assets/style.css">
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/../assets/style.css">
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <title>Best Friends Forever!</title>
 </head>
 <body>
@@ -200,13 +202,13 @@ $("#submitBtn").on("click", function(event) {
             ]
         };
 
-        // alert(newUser.name);
-    var currentURL = window.location.origin;
+    // var currentURL = window.location.origin;
         // Ajax call for receiving response after POST req
-        $.post("api/friends", newUser, function(data) {
+        $.post("http://localhost:9000/api/friends", newUser, function(data) {
             $("#bestFriend").text(data.name);
             $("#bestFriendPhoto").attr("src", data.photo);
             $("#bestFriendModal").modal("toggle");
+            // console.log($("#bestFriendModal"));
         });
     } else {
         // If a required field is missing, show alert
