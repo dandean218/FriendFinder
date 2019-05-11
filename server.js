@@ -2,6 +2,7 @@
 const express = require('express');
 const bodyParser = require('body-parser');
 const path = require('path');
+const cors = require('cors');
 
 const apiRoutes = require('./app/routing/apiRoutes');
 const htmlRoutes = require('./app/routing/htmlRoutes');
@@ -14,6 +15,7 @@ const PORT = process.env.PORT || 9000;
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(express.static(path.resolve(__dirname, 'app')));
+app.use(cors());
 
 // API routing
 app.use('/api', apiRoutes);
